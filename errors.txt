@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 16: expected 'image_name_component' not found.
+    scene "bg room.png"
+          ^
+
+File "game/script.rpy", line 18: expected 'image_name_component' not found.
+    show "artem.jpg"
+         ^
+
+Ren'Py Version: Ren'Py 8.1.3.23091805
+Tue Jan 30 10:14:37 2024

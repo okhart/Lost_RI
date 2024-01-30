@@ -3,6 +3,8 @@
 # Определение персонажей игры.
 define e = Character('Эйлин', color="#c8ffc8")
 
+define a = Character('Артем', color="#c8ffc8")
+
 # Вместо использования оператора image можете просто
 # складывать все ваши файлы изображений в папку images.
 # Например, сцену bg room можно вызвать файлом "bg room.png",
@@ -11,12 +13,16 @@ define e = Character('Эйлин', color="#c8ffc8")
 # Игра начинается здесь:
 label start:
 
-    scene bg room
+    scene white
 
-    show eileen happy
+    show artem
 
-    e "Вы создали новую игру Ren'Py."
+    a "Вы создали новую игру Ren'Py."
 
-    e "Добавьте сюжет, изображения и музыку и отправьте её в мир!"
+    a "Добавьте сюжет, изображения и музыку и отправьте её в мир!"
+
+
+
+    
 
     return
