@@ -1,0 +1,4 @@
+game/saves/
+*.save
+log.txt
+game/caches/
