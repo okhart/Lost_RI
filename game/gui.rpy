@@ -29,14 +29,14 @@ define config.check_conflicting_properties = True
 define gui.accent_color = '#0099cc'
 
 ## Цвет, используемый в текстовой кнопке, когда она не выбрана и не наведена.
-define gui.idle_color = '#888888'
+define gui.idle_color = '#1226d6'
 
 ## Small_color используется в маленьком тексте, который должен быть ярче/темнее,
 ## для того, чтобы выделяться.
 define gui.idle_small_color = '#aaaaaa'
 
 ## Цвет, используемых в кнопках и панелях, когда они наведены.
-define gui.hover_color = '#66c1e0'
+define gui.hover_color = '#1226d6'
 
 ## Цвет, используемый текстовой кнопкой, когда она выбрана, но не наведена.
 ## Кнопка может быть выбрана, если это текущий экран или текущее значение
@@ -83,7 +83,15 @@ define gui.label_text_size = 36
 define gui.notify_text_size = 24
 
 ## Размер заголовка игры.
-define gui.title_text_size = 75
+define gui.title_text_size = 120
+define gui.title_text_color = "#00b43cfa"
+define gui.title_text_font = "ofont.ru_Crystal.ttf"
+
+
+define gui.version_text_size = 80
+define gui.version_text_color = "#00b43cfa"
+define gui.version_text_font = "ofont.ru_Crystal.ttf"
+
 
 
 ## Главное и игровое меню. #####################################################
@@ -152,21 +160,21 @@ define gui.dialogue_text_xalign = 0.0
 
 ## Ширина и высота кнопки в пикселях. Если None, Ren'Py самостоятельно
 ## рассчитает размер.
-define gui.button_width = None
-define gui.button_height = None
+define gui.button_width = 400
+define gui.button_height = 130
 
 ## Границы каждой стороны кнопки в порядке слева, сверху, справа, снизу.
-define gui.button_borders = Borders(6, 6, 6, 6)
+define gui.button_borders = Borders(20, 10, 20, 10)
 
 ## Если True, фон изображения будет моститься. Если False, фон изображения будет
 ## линейно масштабирован.
 define gui.button_tile = False
 
 ## Шрифт, используемый кнопкой.
-define gui.button_text_font = gui.interface_text_font
+define gui.button_text_font = "ofont.ru_Celestina.ttf"
 
 ## Размер текста, используемый кнопкой.
-define gui.button_text_size = gui.interface_text_size
+define gui.button_text_size = gui.interface_text_size+15
 
 ## Цвет текста в кнопке в различных состояниях.
 define gui.button_text_idle_color = gui.idle_color
@@ -176,7 +184,7 @@ define gui.button_text_insensitive_color = gui.insensitive_color
 
 ## Горизонтальное выравнивание текста в кнопке. (0.0 — лево, 0.5 — по центру,
 ## 1.0 — право).
-define gui.button_text_xalign = 0.0
+define gui.button_text_xalign = 0.5
 
 
 ## Эти переменные переписывают настройки различных видов кнопок. Пожалуйста,
@@ -280,7 +288,7 @@ define gui.page_spacing = 0
 define gui.slot_spacing = 15
 
 ## Позиция текста главного меню.
-define gui.main_menu_text_xalign = 1.0
+define gui.main_menu_text_xalign = 0.5
 
 
 ## Рамки #######################################################################
@@ -456,6 +464,7 @@ init python:
 
         gui.choice_button_width = 1860
         gui.choice_button_text_size = 45
+        gui.choice_button_text_align = 0.5
 
         gui.navigation_spacing = 30
         gui.pref_button_spacing = 15

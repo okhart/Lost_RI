@@ -297,7 +297,9 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Начать") action Start()
+            xpos 0.75
+
+            textbutton _("Новая игра") action Start()
 
         else:
 
@@ -367,6 +369,8 @@ screen main_menu():
     if gui.show_name:
 
         vbox:
+            xalign 0.15
+            yalign 0.1
             style "main_menu_vbox"
 
             text "[config.name!t]":
