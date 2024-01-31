@@ -21,6 +21,7 @@ image white_room = im.Scale("images/bg/white_room.webp", 1920, 1080)
 # Игра начинается здесь:
 label start:
 
+    play music "audio/night_sounds.mp3" fadeout 1.0 fadein 1.0
     scene white_room
 
 
@@ -39,7 +40,7 @@ label start:
         time.sleep(1)
     
     show zaitsev:
-        xalign 0.15 yalign 0.45
+        xalign 0.65 yalign 0.45
     with dissolve
 
 

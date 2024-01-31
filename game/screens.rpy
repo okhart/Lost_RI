@@ -735,8 +735,9 @@ screen preferences():
     use game_menu(_("Настройки"), scroll="viewport"):
 
         vbox:
-
+            xalign 0.15
             hbox:
+                
                 box_wrap True
 
                 if renpy.variant("pc") or renpy.variant("web"):
